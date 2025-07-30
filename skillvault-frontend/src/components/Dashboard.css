@@ -1,0 +1,33 @@
+.dashboard {
+  text-align: center;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.dashboard h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.dashboard-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.dashboard-link {
+  display: block;
+  padding: 10px;
+  background-color: #2e86de;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.dashboard-link:hover {
+  background-color: #1e6cc7;
+}
