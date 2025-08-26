@@ -1,5 +1,5 @@
 package com.skillvault.skillvault_backend.entity;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -12,7 +12,7 @@ public class Roadmap {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
+    @JsonProperty("career_title") 
     private String careerTitle;
     private String description;
 

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../api"; // ✅ use api.js instead of raw axios
 
 function StepList() {
   const [steps, setSteps] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:8080/api/steps")
+    api
+      .get("/steps")
       .then((response) => {
         setSteps(response.data);
       })
@@ -24,10 +24,11 @@ function StepList() {
         <ul className="list">
           {steps.map((step) => (
             <li key={step.id} className="list-item">
+              <strong>Order:</strong> {step.orderIndex} <br />
               <strong>Title:</strong> {step.title} <br />
-              <strong>Description:</strong> {step.description} <br />
-              <strong>Skill:</strong> {step.skill} <br />
-              <strong>Roadmap ID:</strong> {step.roadmapId}
+              <strong>Content:</strong> {step.content} <br />
+              <strong>Roadmap ID:</strong>{" "}
+              {step.roadmap ? step.roadmap.id : "N/A"}
             </li>
           ))}
         </ul>

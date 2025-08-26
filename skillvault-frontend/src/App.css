@@ -53,47 +53,31 @@ main {
 
 /* Component Form Styling */
 .form-container {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.form-container h2 {
-  margin-bottom: 20px;
-  color: #34495e;
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-input {
-  padding: 10px;
-  margin-bottom: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  background: #f9f9f9;
 }
 
-button {
+.form-container input, .form-container select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.form-container button {
   padding: 10px;
-  background-color: #27ae60;
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #219150;
+.form-container button:hover {
+  background: #0056b3;
 }
 
 /* App.css */

@@ -20,10 +20,10 @@ public class UserController {
     public User registerUser(@RequestBody User user) {
         return userService.createUser(user);
     }
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
-    }
+  //  @PostMapping
+    //public User createUser(@RequestBody User user) {
+      //  return userService.createUser(user);
+    //}
 
 
     @GetMapping
