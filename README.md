@@ -44,11 +44,3 @@ Roadmap: id, title, description, user_id
 Step: id, title, content, orderIndex, roadmap_id
 Skill: id, name, level, category
 
-1. Inside your project root folder (same level as `package.json`), create a new file:
-2. Paste the above content into the file.
-3. Save the file.
-4. In your terminal:
-```bash
-git add README.md
-git commit -m "Added project README"
-git push
